@@ -1,0 +1,99 @@
+body{
+	-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+background: grey;
+
+}
+.g-card-container{
+	margin: 30px auto;
+}
+.card-container{
+		height: auto;
+		min-height: 200px;
+		padding-bottom: 20px;
+		margin-right: 2%;
+		border-radius: 2%;
+		-webkit-box-shadow: -2px 1px 10px 6px rgba(0,0,0,0.58);
+		-moz-box-shadow: -2px 1px 10px 6px rgba(0,0,0,0.58);
+		box-shadow: -2px 1px 10px 6px rgba(0,0,0,0.58);
+		background: white;
+}
+
+.card-header{
+		border: 1px solid grey;
+		background: skyblue;
+		margin-top: 4%;
+		margin-bottom: 2%;
+		-webkit-box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.58);
+		-moz-box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.58);
+		box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.58);
+		text-align: center;
+}
+
+
+
+/* PUNCH CSS */
+
+.g-punch-container{
+	margin: 3% auto 0 auto;
+	width: 80%;
+}
+
+.punch-container{
+	display: flex;
+	border: 1px solid grey;
+	background: white;
+	min-height:100px;
+	min-width: 100px;
+	max-width: 300px;
+	max-height: 250px;
+	margin-right: 3%;
+	margin-bottom: 2%;
+	-webkit-box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.58);
+	-moz-box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.58);
+	box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.58);
+	cursor: context-menu;
+	padding: 10px 10px 10px 10px;
+
+}
+
+
+.punch-container span{
+	word-break: break-word;
+}
+
+.sortable-card{
+	vertical-align: middle;
+	text-align: center;
+	margin-bottom: 2%;
+	cursor: context-menu;
+
+
+}
+
+div.sortable-card button.close{
+	display: none;
+}
+
+
+div.sortable2 button.close{
+	display: block;
+    position: relative;
+	visibility: visible;
+
+}
+
+
+table{
+	position: absolute;
+	left: -9999999px;
+}
+
+.main-sortable{
+	width: 100%;
+	height: 100%;
+}
