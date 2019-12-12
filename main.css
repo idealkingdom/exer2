@@ -1,26 +1,42 @@
 body{
 	-webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
--o-user-select: none;
-user-select: none;
-background: grey;
-
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	background: skyblue;
+    height:100%;
+    width:100%;
 }
+
+div.container{
+	background: white;
+	min-height: 90vh;
+    -webkit-box-shadow: -2px 1px 10px 6px rgba(0,0,0,0.58);
+	-moz-box-shadow: -2px 1px 10px 6px rgba(0,0,0,0.58);
+	box-shadow: -2px 1px 10px 6px rgba(0,0,0,0.58);
+	padding: 5px 5px 5px 23px;
+	font-size: 13px;
+	margin-top: 2%;
+}
+
 .g-card-container{
 	margin: 30px auto;
+
+
 }
 .card-container{
 		height: auto;
-		min-height: 200px;
+		min-height: 150px;
 		padding-bottom: 20px;
-		margin-right: 2%;
+		margin: 0 auto;
 		border-radius: 2%;
 		-webkit-box-shadow: -2px 1px 10px 6px rgba(0,0,0,0.58);
 		-moz-box-shadow: -2px 1px 10px 6px rgba(0,0,0,0.58);
 		box-shadow: -2px 1px 10px 6px rgba(0,0,0,0.58);
 		background: white;
+
 }
 
 .card-header{
@@ -37,6 +53,16 @@ background: grey;
 
 
 /* PUNCH CSS */
+
+.g-punch-divider{
+	padding: 5px 5px 5px 5px;
+	-webkit-box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.58);
+	-moz-box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.58);
+	box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.58);
+	margin-right: 2%;
+	margin-bottom: 5%;
+}
+
 
 .g-punch-container{
 	margin: 3% auto 0 auto;
@@ -88,7 +114,7 @@ div.sortable2 button.close{
 }
 
 
-table{
+div.answersection table{
 	position: absolute;
 	left: -9999999px;
 }
@@ -96,4 +122,11 @@ table{
 .main-sortable{
 	width: 100%;
 	height: 100%;
+}
+
+#nextButton{
+	margin: 0 auto;
+}
+#nextButton.completed{
+	display: inline-flex !important;
 }

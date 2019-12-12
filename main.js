@@ -10,18 +10,24 @@ $(function() {
 		
 	},
 	update: function(event,ui) {
-		$('.sortable').disableSelection()
-		targetDiv = $(ui.item).attr('from-parent');
+		targetDiv = $(ui.item).attr('rowindex');
 		colIndex = $(ui.item).closest('div.sortable2').attr('data-from')
 		$ ('th.gridlabel').eq(targetDiv).siblings('td').eq(colIndex).find('input').prop('checked','1')
+		$('div.sortable-card').eq(targetDiv).addClass('complete')
+		$('div.container').change();
+
 	}
 
 }).disableSelection();
 
 $ ('button.close').click(function(event) {
-		targetDiv = $(this).closest('div').attr('from-parent')
-		targetParent = $(this).closest('div')
-		$('div.sortable-card').eq(targetDiv).sortable('cancel')
-	
+		targetParent = $(this).closest('div').attr('rowindex')
+		$('div.sortable-card').eq(targetParent).sortable('cancel').removeClass('complete')
+		$ ('th.gridlabel').eq(targetParent).siblings('td').find('input:radio').prop('checked', 0)
+		$('div.container').change();
 });
+
+
+
+
 });
