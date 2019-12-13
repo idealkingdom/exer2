@@ -186,7 +186,7 @@ owl-item.drag{
 
     .owl-carousel .owl-item {
         text-align:center;
-
+        font-size: 21px;
     }
     .owl-carousel .item {
         float: none;
@@ -202,7 +202,10 @@ owl-item.drag{
 .button-carousel-div{
 	margin: 0 auto;
 	width: 90%;
-	display: flex;
+	display: block;
+	text-align: center;
+	margin-bottom:2%;
+	margin-top: 2%;
 }
 
 button.btn-mobile{
