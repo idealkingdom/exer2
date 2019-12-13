@@ -6,11 +6,18 @@ body{
 	-o-user-select: none;
 	user-select: none;
 	background: skyblue;
-    height:100%;
-    width:100%;
+
+
 }
 
-div.container{
+body.drag{
+	position: fixed; overflow-y:auto 
+}
+
+
+
+
+div.container-fluid{
 	background: white;
 	min-height: 90vh;
     -webkit-box-shadow: -2px 1px 10px 6px rgba(0,0,0,0.58);
@@ -21,10 +28,29 @@ div.container{
 	margin-top: 2%;
 }
 
+
+ @media only screen and (min-width: 360px) and (max-width:961px) {
+
+		div.mobile-div{
+					display: block !important;
+		}
+
+
+}
+
+@media (min-width:961px )  {
+
+div.desktop-div{
+	display: block !important;
+}
+
+
+
+}
+
+
 .g-card-container{
 	margin: 30px auto;
-
-
 }
 .card-container{
 		height: auto;
@@ -48,6 +74,7 @@ div.container{
 		-moz-box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.58);
 		box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.58);
 		text-align: center;
+		font-weight: bold;
 }
 
 
@@ -55,12 +82,13 @@ div.container{
 /* PUNCH CSS */
 
 .g-punch-divider{
+	display: block;
 	padding: 5px 5px 5px 5px;
 	-webkit-box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.58);
 	-moz-box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.58);
 	box-shadow: -2px 1px 5px 2px rgba(0,0,0,0.58);
 	margin-right: 2%;
-	margin-bottom: 5%;
+	margin-bottom: 2%;
 }
 
 
@@ -114,9 +142,10 @@ div.sortable2 button.close{
 }
 
 
-div.answersection table{
+div.answersection table.t-hidden{
 	position: absolute;
 	left: -9999999px;
+	top:30px;
 }
 
 .main-sortable{
@@ -130,3 +159,58 @@ div.answersection table{
 #nextButton.completed{
 	display: inline-flex !important;
 }
+
+
+
+
+.owl-carousel .owl-stage-outer.drag {
+    /* override */
+    overflow: visible;
+    display: block !important;
+
+}
+
+
+owl-item.drag{
+	display: none !important;
+}
+
+
+
+
+.owl-stage.drag {
+	display: block !important;
+ 	width: 400px !important;
+
+ }
+
+    .owl-carousel .owl-item {
+        text-align:center;
+
+    }
+    .owl-carousel .item {
+        float: none;
+        display: inline-block;
+    }
+
+.button-div,.buttons-sm{
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+.button-carousel-div{
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+}
+
+button.btn-mobile{
+	margin: 3%;
+	display: inline-block;
+}
+
+.mobile-div{
+	margin-top: 3%;
+}
+
